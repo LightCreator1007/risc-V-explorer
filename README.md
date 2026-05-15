@@ -70,10 +70,6 @@ Builds an adjacency list of extensions that share instructions. Optionally outpu
 Tier 1:
 
 ```
-======================================================================
-  TIER 1 -- Instruction Set Parsing
-======================================================================
-
   Source: ./instr_dict.json
   Total instructions parsed: 1188
 
@@ -104,7 +100,7 @@ Tier 2:
 
 ```
 ======================================================================
-  TIER 2 -- Cross-Reference with the ISA Manual
+  Cross-Reference with the ISA Manual
 ======================================================================
 
   --- Count Summary ---
@@ -129,7 +125,7 @@ Tier 3:
 
 ```
 ======================================================================
-  TIER 3 -- Shared-Instruction Graph (Bonus)
+  Shared-Instruction Graph (Bonus)
 ======================================================================
 
   rv_zbb
