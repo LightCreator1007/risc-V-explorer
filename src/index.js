@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { resolve, dirname, basename } from "node:path";
-import { existsSync } from "node:fs";
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { execSync } from "node:child_process";
 
 import {
@@ -23,6 +23,7 @@ function parseArgs(argv) {
     jsonPath: "./instr_dict.json",
     manualSrc: "./riscv-isa-manual/src",
     mermaid: false,
+    outFile: null,
   };
 
   for (let i = 2; i < argv.length; i++) {
@@ -35,6 +36,13 @@ function parseArgs(argv) {
         break;
       case "--mermaid":
         args.mermaid = true;
+        break;
+      case "--out":
+        if (i + 1 < argv.length && !argv[i + 1].startsWith("--")) {
+          args.outFile = argv[++i];
+        } else {
+          args.outFile = "out/output.txt";
+        }
         break;
       default:
         console.error(`Unkown argument: ${argv[i]}`);
@@ -69,12 +77,25 @@ function subheading(text) {
   console.log();
 }
 
+function stripAnsi(str) {
+  return str.replace(/\x1b\[[0-9;]*m/g, "");
+}
+
 //Main section
 
 function main() {
   const args = parseArgs(process.argv);
   const jsonPath = resolve(args.jsonPath);
   const manualSrc = resolve(args.manualSrc);
+
+  const outputLines = [];
+  const origLog = console.log;
+  if (args.outFile) {
+    console.log = (...a) => {
+      origLog(...a);
+      outputLines.push(stripAnsi(a.map(String).join(" ")));
+    };
+  }
 
   // We need to validate the inputs
   if (!existsSync(jsonPath)) {
@@ -278,6 +299,13 @@ function main() {
   console.log();
   console.log(`${BOLD}${GREEN}Done!${RESET}`);
   console.log();
+
+  if (args.outFile) {
+    const outPath = resolve(args.outFile);
+    mkdirSync(dirname(outPath), { recursive: true });
+    writeFileSync(outPath, outputLines.join("\n") + "\n", "utf-8");
+    origLog(`${DIM}Output written to:${RESET} ${outPath}`);
+  }
 }
 
 main();

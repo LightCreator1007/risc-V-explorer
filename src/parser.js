@@ -62,7 +62,7 @@ function printSummary(groups) {
     const paddedExt = ext.padEnd(maxExtLen);
     const paddedCount = String(count).padStart(maxCountLen);
     lines.push(
-      `${paddedExt} | ${paddedCount} instructions${count === 1 ? " " : "s"} | e.g. ${example}`,
+      `${paddedExt} | ${paddedCount} instruction${count === 1 ? " " : "s"} | e.g. ${example}`,
     );
   }
   return lines;
