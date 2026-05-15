@@ -52,7 +52,7 @@ function printSummary(groups) {
 
   for (const [ext, mnemonics] of groups) {
     maxExtLen = Math.max(maxExtLen, ext.length);
-    maxCountLen = Math.max(maxCountLen, mnemonics.length);
+    maxCountLen = Math.max(maxCountLen, String(mnemonics.length).length);
   }
 
   const lines = [];

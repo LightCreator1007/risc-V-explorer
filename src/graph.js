@@ -27,17 +27,6 @@ export function renderTextGraph(adjacency) {
   const lines = [];
   const sortedNodes = [...adjacency.keys()].sort();
 
-  lines.push(
-    "═══════════════════════════════════════════════════════════════════",
-  );
-  lines.push(
-    "  Shared-Instruction Graph (extensions connected by shared instructions)",
-  );
-  lines.push(
-    "═══════════════════════════════════════════════════════════════════",
-  );
-  lines.push("");
-
   for (const node of sortedNodes) {
     const neighbors = adjacency.get(node);
     const sortedNeighbors = [...neighbors.keys()].sort();
