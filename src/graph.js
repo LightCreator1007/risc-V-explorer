@@ -75,7 +75,7 @@ export function renderMermaidGraph(adjacency) {
       if (!edgeSet.has(key)) {
         edgeSet.add(key);
         const [left, right] = [a, b].sort();
-        const leftId = left.replace(/[^a-zA-z0-9]/g, "_");
+        const leftId = left.replace(/[^a-zA-Z0-9]/g, "_");
         const rightId = right.replace(/[^a-zA-Z0-9]/g, "_");
         lines.push(
           `  ${leftId}["${left}"] -->|"${shared.length} shared"| ${rightId}["${right}"]`,

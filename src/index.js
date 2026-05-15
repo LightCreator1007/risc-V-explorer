@@ -115,7 +115,7 @@ function main() {
         );
       } else {
         console.log(
-          `\n${RED}✗ Clone completed, but ${manualSrc} is still missing. Skipping Tier 2.${RESET}\n`,
+          `\n${RED}✗ Clone completed, but ${manualSrc} is still missing. Skipping Cross-reference.${RESET}\n`,
         );
       }
     } catch (error) {
@@ -123,7 +123,7 @@ function main() {
         `\n${RED}✗ Failed to clone the repository. Do you have git installed?${RESET}`,
       );
       console.error(`  Error: ${error.message}`);
-      console.error(`  Tier 2 (cross-reference) will be skipped.\n`);
+      console.error(`  Cross-reference will be skipped.\n`);
     }
   }
 
@@ -257,13 +257,13 @@ function main() {
   }
 
   //Shared Instruction Graph
-  heading("Tier 3: Shared-Instruction Graph (Bonus)");
+  heading("Shared-Instruction Graph (Bonus)");
   const adjacency = buildSharedInstructionGraph(instrDict);
 
   if (adjacency.size === 0) {
     console.log("  No shared instructions found between extensions");
   } else {
-    const textLines = renderMermaidGraph(adjacency);
+    const textLines = renderTextGraph(adjacency);
     for (const line of textLines) {
       console.log(line);
     }
