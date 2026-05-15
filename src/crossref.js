@@ -316,7 +316,7 @@ function scanManual(srcDir, knownNormalized) {
 }
 
 function crossReference(jsonExtTags, manualSrcDir) {
-  const normMap = buildJsonNormalizationMap(jsonExtTags);
+  const normMap = buildJsonNormalMap(jsonExtTags);
   const jsonNormalized = new Set(normMap.keys);
 
   const manualFound = scanManualForExtensions(manualSrcDir, jsonNormalized);

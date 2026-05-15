@@ -67,3 +67,10 @@ function printSummary(groups) {
   }
   return lines;
 }
+
+export {
+  loadFile,
+  groupByExtension,
+  findMultiExtensionInstructions,
+  printSummary,
+};

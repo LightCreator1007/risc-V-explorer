@@ -1,4 +1,4 @@
-export function buildSharedInsGraph(instrDict) {
+export function buildSharedInstructionGraph(instrDict) {
   const adjacency = new Map();
 
   for (const [mnemonic, meta] of Object.entries(instrDict)) {
@@ -12,7 +12,7 @@ export function buildSharedInsGraph(instrDict) {
         if (!adjacency.has(b)) adjacency.set(b, new Map());
 
         if (!adjacency.get(a).has(b)) adjacency.get(a).set(b, []);
-        if (!adjaceny.get(b).has(a)) adjacency.get(b).set(a, []);
+        if (!adjacency.get(b).has(a)) adjacency.get(b).set(a, []);
 
         adjacency.get(a).get(b).push(mnemonic);
         adjacency.get(b).get(a).push(mnemonic);
