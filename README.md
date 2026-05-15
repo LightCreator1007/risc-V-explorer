@@ -9,7 +9,7 @@ Built for the RISC-V Mentorship Coding Challenge.
 Requires Node.js 18+ and Git. No `npm install` needed. Zero external dependencies.
 
 ```bash
-git clone <your-repo-url>
+git clone [<your-repo-url>](https://github.com/LightCreator1007/risc-V-explorer)
 cd risc-V
 
 # Download the instruction dictionary
