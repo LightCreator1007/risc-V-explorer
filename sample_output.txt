@@ -1,0 +1,528 @@
+  Source:/home/arunit/Desktop/projects/risc-assignment/instr_dict.json
+  Total instructions parsed: 1188
+
+  ─── Extension summary table ───
+
+  rv_a            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  11 instructionss | e.g. AMOADD_W
+  rv_c            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  23 instructionss | e.g. C_ADD
+  rv_c_d          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. C_FLD
+  rv_d            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  26 instructionss | e.g. FADD_D
+  rv_d_zfa        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   8 instructionss | e.g. FCVTMOD_W_D
+  rv_d_zfhmin     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. FCVT_D_H
+  rv_f            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  26 instructionss | e.g. FADD_S
+  rv_f_zfa        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   7 instructionss | e.g. FLEQ_S
+  rv_h            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  13 instructionss | e.g. HFENCE_GVMA
+  rv_i            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  37 instructionss | e.g. ADD
+  rv_m            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   8 instructionss | e.g. DIV
+  rv_q            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  30 instructionss | e.g. FADD_Q
+  rv_q_zfa        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   7 instructionss | e.g. FLEQ_Q
+  rv_q_zfhmin     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. FCVT_H_Q
+  rv_s            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. SFENCE_VMA
+  rv_sdext        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. DRET
+  rv_smrnmi       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. MNRET
+  rv_ssctr        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. SCTRCLR
+  rv_svinval      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   3 instructionss | e.g. SFENCE_INVAL_IR
+  rv_svinval_h    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. HINVAL_GVMA
+  rv_system       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. MRET
+  rv_u            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. URET
+  rv_v            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 627 instructionss | e.g. VAADD_VV
+  rv_zabha        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  18 instructionss | e.g. AMOADD_B
+  rv_zabha_zacas  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. AMOCAS_B
+  rv_zacas        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. AMOCAS_D
+  rv_zalasr       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   8 instructionss | e.g. LB_AQ
+  rv_zawrs        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. WRS_NTO
+  rv_zba          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   3 instructionss | e.g. SH1ADD
+  rv_zbb          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  17 instructionss | e.g. ANDN
+  rv_zbc          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   3 instructionss | e.g. CLMUL
+  rv_zbkb         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   7 instructionss | e.g. ANDN
+  rv_zbkc         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. CLMUL
+  rv_zbkx         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. XPERM4
+  rv_zbp          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. XPERM16
+  rv_zbs          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. BCLR
+  rv_zcb          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  11 instructionss | e.g. C_LBU
+  rv_zcmop        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. C_MOP_N
+  rv_zcmp         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   6 instructionss | e.g. CM_MVA01S
+  rv_zcmt         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. CM_JALT
+  rv_zfbfmin      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. FCVT_BF16_S
+  rv_zfh          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  22 instructionss | e.g. FADD_H
+  rv_zfh_zfa      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   7 instructionss | e.g. FLEQ_H
+  rv_zfhmin       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   6 instructionss | e.g. FCVT_H_S
+  rv_zibi         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. BEQI
+  rv_zicbo        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. CBO_CLEAN
+  rv_zicfiss      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. SSAMOSWAP_D
+  rv_zicond       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. CZERO_EQZ
+  rv_zicsr        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   6 instructionss | e.g. CSRRC
+  rv_zifencei     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. FENCE_I
+  rv_zimop        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. MOP_R_N
+  rv_zk           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  15 instructionss | e.g. ANDN
+  rv_zkn          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  15 instructionss | e.g. ANDN
+  rv_zknh         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. SHA256SIG0
+  rv_zkr          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. CSRRAND
+  rv_zks          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  15 instructionss | e.g. ANDN
+  rv_zksed        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. SM4ED
+  rv_zksh         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. SM3P0
+  rv_zvabd        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   5 instructionss | e.g. VABD_VV
+  rv_zvbb         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  16 instructionss | e.g. VANDN_VV
+  rv_zvbc         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. VCLMUL_VV
+  rv_zvfbdot32f   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. VFBDOT_VV
+  rv_zvfbfmin     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. VFNCVTBF16_F_F_W
+  rv_zvfbfwma     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. VFWMACCBF16_VF
+  rv_zvfofp4min   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. VFEXT_VF2
+  rv_zvfofp8min   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   3 instructionss | e.g. VFNCVT_F_F_Q
+  rv_zvfqbdot8f   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. VFQBDOT_ALT_VV
+  rv_zvfqldot8f   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. VFQLDOT_ALT_VV
+  rv_zvfwbdot16bf |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. VFWBDOT_VV
+  rv_zvfwldot16bf |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. VFWLDOT_VV
+  rv_zvkg         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. VGHSH_VV
+  rv_zvkn         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  23 instructionss | e.g. VAESDF_VS
+  rv_zvkned       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  11 instructionss | e.g. VAESDF_VS
+  rv_zvknha       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   3 instructionss | e.g. VSHA2CH_VV
+  rv_zvknhb       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   3 instructionss | e.g. VSHA2CH_VV
+  rv_zvks         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  14 instructionss | e.g. VANDN_VV
+  rv_zvksed       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   3 instructionss | e.g. VSM4K_VI
+  rv_zvksh        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. VSM3C_VI
+  rv_zvqbdot8i    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. VQBDOTS_VV
+  rv_zvqdotq      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   7 instructionss | e.g. VQDOT_VV
+  rv_zvqldot8i    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. VQLDOTS_VV
+  rv_zvzip        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   5 instructionss | e.g. VPAIRE_VV
+  rv32_c          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. C_JAL
+  rv32_c_f        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. C_FLW
+  rv32_d_zfa      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. FMVH_X_D
+  rv32_zk         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  10 instructionss | e.g. AES32DSI
+  rv32_zkn        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  10 instructionss | e.g. AES32DSI
+  rv32_zknd       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. AES32DSI
+  rv32_zkne       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. AES32ESI
+  rv32_zknh       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   6 instructionss | e.g. SHA512SIG0H
+  rv64_a          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  11 instructionss | e.g. AMOADD_D
+  rv64_c          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  10 instructionss | e.g. C_ADDIW
+  rv64_d          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   6 instructionss | e.g. FCVT_D_L
+  rv64_f          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. FCVT_L_S
+  rv64_h          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   3 instructionss | e.g. HLV_D
+  rv64_i          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  15 instructionss | e.g. ADDIW
+  rv64_m          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   5 instructionss | e.g. DIVUW
+  rv64_q          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. FCVT_L_Q
+  rv64_q_zfa      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 instructionss | e.g. FMVH_X_Q
+  rv64_zacas      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. AMOCAS_Q
+  rv64_zba        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   5 instructionss | e.g. ADD_UW
+  rv64_zbb        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   9 instructionss | e.g. CLZW
+  rv64_zbkb       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   5 instructionss | e.g. PACKW
+  rv64_zbp        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   5 instructionss | e.g. GORCI
+  rv64_zbs        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. BCLRI
+  rv64_zcb        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. C_ZEXT_W
+  rv64_zfh        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. FCVT_H_L
+  rv64_zk         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  16 instructionss | e.g. AES64DS
+  rv64_zkn        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  16 instructionss | e.g. AES64DS
+  rv64_zknd       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   5 instructionss | e.g. AES64DS
+  rv64_zkne       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. AES64ES
+  rv64_zknh       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4 instructionss | e.g. SHA512SIG0
+  rv64_zkr        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 instructions  | e.g. CSRRAND64
+  rv64_zks        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   5 instructionss | e.g. PACKW
+
+  Total extensions: 114
+  ─── Instructinons belonging to multiple extensions ───
+
+  Found 73 instructions in multiple extensions:
+
+ AES32DSI             -> rv32_zk, rv32_zkn, rv32_zknd
+ AES32DSMI            -> rv32_zk, rv32_zkn, rv32_zknd
+ AES32ESI             -> rv32_zk, rv32_zkn, rv32_zkne
+ AES32ESMI            -> rv32_zk, rv32_zkn, rv32_zkne
+ AES64DS              -> rv64_zk, rv64_zkn, rv64_zknd
+ AES64DSM             -> rv64_zk, rv64_zkn, rv64_zknd
+ AES64ES              -> rv64_zk, rv64_zkn, rv64_zkne
+ AES64ESM             -> rv64_zk, rv64_zkn, rv64_zkne
+ AES64IM              -> rv64_zk, rv64_zkn, rv64_zknd
+ AES64KS1I            -> rv64_zk, rv64_zkn, rv64_zknd, rv64_zkne
+ AES64KS2             -> rv64_zk, rv64_zkn, rv64_zknd, rv64_zkne
+ ANDN                 -> rv_zbb, rv_zbkb, rv_zk, rv_zkn, rv_zks
+ CLMUL                -> rv_zbc, rv_zbkc, rv_zk, rv_zkn, rv_zks
+ CLMULH               -> rv_zbc, rv_zbkc, rv_zk, rv_zkn, rv_zks
+ ORN                  -> rv_zbb, rv_zbkb, rv_zk, rv_zkn, rv_zks
+ PACK                 -> rv_zbkb, rv_zk, rv_zkn, rv_zks
+ PACKH                -> rv_zbkb, rv_zk, rv_zkn, rv_zks
+ PACKW                -> rv64_zbkb, rv64_zk, rv64_zkn, rv64_zks
+ ROL                  -> rv_zbb, rv_zbkb, rv_zk, rv_zkn, rv_zks
+ ROLW                 -> rv64_zbb, rv64_zbkb, rv64_zk, rv64_zkn, rv64_zks
+ ROR                  -> rv_zbb, rv_zbkb, rv_zk, rv_zkn, rv_zks
+ RORI                 -> rv64_zbb, rv64_zbkb, rv64_zk, rv64_zkn, rv64_zks
+ RORIW                -> rv64_zbb, rv64_zbkb, rv64_zk, rv64_zkn, rv64_zks
+ RORW                 -> rv64_zbb, rv64_zbkb, rv64_zk, rv64_zkn, rv64_zks
+ SHA256SIG0           -> rv_zk, rv_zkn, rv_zknh
+ SHA256SIG1           -> rv_zk, rv_zkn, rv_zknh
+ SHA256SUM0           -> rv_zk, rv_zkn, rv_zknh
+ SHA256SUM1           -> rv_zk, rv_zkn, rv_zknh
+ SHA512SIG0           -> rv64_zk, rv64_zkn, rv64_zknh
+ SHA512SIG0H          -> rv32_zk, rv32_zkn, rv32_zknh
+ SHA512SIG0L          -> rv32_zk, rv32_zkn, rv32_zknh
+ SHA512SIG1           -> rv64_zk, rv64_zkn, rv64_zknh
+ SHA512SIG1H          -> rv32_zk, rv32_zkn, rv32_zknh
+ SHA512SIG1L          -> rv32_zk, rv32_zkn, rv32_zknh
+ SHA512SUM0           -> rv64_zk, rv64_zkn, rv64_zknh
+ SHA512SUM0R          -> rv32_zk, rv32_zkn, rv32_zknh
+ SHA512SUM1           -> rv64_zk, rv64_zkn, rv64_zknh
+ SHA512SUM1R          -> rv32_zk, rv32_zkn, rv32_zknh
+ SM3P0                -> rv_zks, rv_zksh
+ SM3P1                -> rv_zks, rv_zksh
+ SM4ED                -> rv_zks, rv_zksed
+ SM4KS                -> rv_zks, rv_zksed
+ VAESDF_VS            -> rv_zvkn, rv_zvkned
+ VAESDF_VV            -> rv_zvkn, rv_zvkned
+ VAESDM_VS            -> rv_zvkn, rv_zvkned
+ VAESDM_VV            -> rv_zvkn, rv_zvkned
+ VAESEF_VS            -> rv_zvkn, rv_zvkned
+ VAESEF_VV            -> rv_zvkn, rv_zvkned
+ VAESEM_VS            -> rv_zvkn, rv_zvkned
+ VAESEM_VV            -> rv_zvkn, rv_zvkned
+ VAESKF1_VI           -> rv_zvkn, rv_zvkned
+ VAESKF2_VI           -> rv_zvkn, rv_zvkned
+ VAESZ_VS             -> rv_zvkn, rv_zvkned
+ VANDN_VV             -> rv_zvbb, rv_zvkn, rv_zvks
+ VANDN_VX             -> rv_zvbb, rv_zvkn, rv_zvks
+ VBREV8_V             -> rv_zvbb, rv_zvkn, rv_zvks
+ VREV8_V              -> rv_zvbb, rv_zvkn, rv_zvks
+ VROL_VV              -> rv_zvbb, rv_zvkn, rv_zvks
+ VROL_VX              -> rv_zvbb, rv_zvkn, rv_zvks
+ VROR_VI              -> rv_zvbb, rv_zvkn, rv_zvks
+ VROR_VV              -> rv_zvbb, rv_zvkn, rv_zvks
+ VROR_VX              -> rv_zvbb, rv_zvkn, rv_zvks
+ VSHA2CH_VV           -> rv_zvkn, rv_zvknha, rv_zvknhb
+ VSHA2CL_VV           -> rv_zvkn, rv_zvknha, rv_zvknhb
+ VSHA2MS_VV           -> rv_zvkn, rv_zvknha, rv_zvknhb
+ VSM3C_VI             -> rv_zvks, rv_zvksh
+ VSM3ME_VV            -> rv_zvks, rv_zvksh
+ VSM4K_VI             -> rv_zvks, rv_zvksed
+ VSM4R_VS             -> rv_zvks, rv_zvksed
+ VSM4R_VV             -> rv_zvks, rv_zvksed
+ XNOR                 -> rv_zbb, rv_zbkb, rv_zk, rv_zkn, rv_zks
+ XPERM4               -> rv_zbkx, rv_zk, rv_zkn, rv_zks
+ XPERM8               -> rv_zbkx, rv_zk, rv_zkn, rv_zks
+
+======================================================================
+  Cross-Reference with ISA-Manual
+══════════════════════════════════════════════════════════════════════
+
+  ISA Manual source dir: /home/arunit/Desktop/projects/risc-assignment/riscv-isa-manual/src
+  JSON extension tags: 114
+
+  ─── Count Summary ───
+
+  58 exact matched, 10 compound matched, 1 prefix matched, 16 in JSON only, 109 in manual only
+
+  ─── Matched Extensions (in both JSON and ISA manual) ───
+
+  ✓ a                    (JSON tags: rv64_a, rv_a)
+  ✓ c                    (JSON tags: rv_c, rv64_c, rv32_c)
+  ✓ d                    (JSON tags: rv_d, rv64_d)
+  ✓ f                    (JSON tags: rv_f, rv64_f)
+  ✓ h                    (JSON tags: rv_h, rv64_h)
+  ✓ i                    (JSON tags: rv_i, rv64_i)
+  ✓ m                    (JSON tags: rv_m, rv64_m)
+  ✓ q                    (JSON tags: rv_q, rv64_q)
+  ✓ s                    (JSON tags: rv_s)
+  ✓ smrnmi               (JSON tags: rv_smrnmi)
+  ✓ ssctr                (JSON tags: rv_ssctr)
+  ✓ svinval              (JSON tags: rv_svinval)
+  ✓ u                    (JSON tags: rv_u)
+  ✓ v                    (JSON tags: rv_v)
+  ✓ zabha                (JSON tags: rv_zabha)
+  ✓ zacas                (JSON tags: rv_zacas, rv64_zacas)
+  ✓ zalasr               (JSON tags: rv_zalasr)
+  ✓ zawrs                (JSON tags: rv_zawrs)
+  ✓ zba                  (JSON tags: rv64_zba, rv_zba)
+  ✓ zbb                  (JSON tags: rv_zbb, rv64_zbb)
+  ✓ zbc                  (JSON tags: rv_zbc)
+  ✓ zbkb                 (JSON tags: rv_zbkb, rv64_zbkb)
+  ✓ zbkc                 (JSON tags: rv_zbkc)
+  ✓ zbkx                 (JSON tags: rv_zbkx)
+  ✓ zbs                  (JSON tags: rv_zbs, rv64_zbs)
+  ✓ zcb                  (JSON tags: rv_zcb, rv64_zcb)
+  ✓ zcmop                (JSON tags: rv_zcmop)
+  ✓ zcmp                 (JSON tags: rv_zcmp)
+  ✓ zcmt                 (JSON tags: rv_zcmt)
+  ✓ zfbfmin              (JSON tags: rv_zfbfmin)
+  ✓ zfh                  (JSON tags: rv_zfh, rv64_zfh)
+  ✓ zfhmin               (JSON tags: rv_zfhmin)
+  ✓ zicfiss              (JSON tags: rv_zicfiss)
+  ✓ zicond               (JSON tags: rv_zicond)
+  ✓ zicsr                (JSON tags: rv_zicsr)
+  ✓ zifencei             (JSON tags: rv_zifencei)
+  ✓ zimop                (JSON tags: rv_zimop)
+  ✓ zk                   (JSON tags: rv32_zk, rv64_zk, rv_zk)
+  ✓ zkn                  (JSON tags: rv32_zkn, rv64_zkn, rv_zkn)
+  ✓ zknd                 (JSON tags: rv32_zknd, rv64_zknd)
+  ✓ zkne                 (JSON tags: rv32_zkne, rv64_zkne)
+  ✓ zknh                 (JSON tags: rv_zknh, rv64_zknh, rv32_zknh)
+  ✓ zkr                  (JSON tags: rv_zkr, rv64_zkr)
+  ✓ zks                  (JSON tags: rv_zks, rv64_zks)
+  ✓ zksed                (JSON tags: rv_zksed)
+  ✓ zksh                 (JSON tags: rv_zksh)
+  ✓ zvbb                 (JSON tags: rv_zvbb)
+  ✓ zvbc                 (JSON tags: rv_zvbc)
+  ✓ zvfbfmin             (JSON tags: rv_zvfbfmin)
+  ✓ zvfbfwma             (JSON tags: rv_zvfbfwma)
+  ✓ zvkg                 (JSON tags: rv_zvkg)
+  ✓ zvkn                 (JSON tags: rv_zvkn)
+  ✓ zvkned               (JSON tags: rv_zvkned)
+  ✓ zvknha               (JSON tags: rv_zvknha)
+  ✓ zvknhb               (JSON tags: rv_zvknhb)
+  ✓ zvks                 (JSON tags: rv_zvks)
+  ✓ zvksed               (JSON tags: rv_zvksed)
+  ✓ zvksh                (JSON tags: rv_zvksh)
+
+  ─── Compound-Matched Extensions (all constituent parts verified) ───
+
+  ◆ c_d                  = c + d  (JSON tags: rv_c_d)
+  ◆ c_f                  = c + f  (JSON tags: rv32_c_f)
+  ◆ d_zfa                = d + zfa  (JSON tags: rv_d_zfa, rv32_d_zfa)
+  ◆ d_zfhmin             = d + zfhmin  (JSON tags: rv_d_zfhmin)
+  ◆ f_zfa                = f + zfa  (JSON tags: rv_f_zfa)
+  ◆ q_zfa                = q + zfa  (JSON tags: rv_q_zfa, rv64_q_zfa)
+  ◆ q_zfhmin             = q + zfhmin  (JSON tags: rv_q_zfhmin)
+  ◆ svinval_h            = svinval + h  (JSON tags: rv_svinval_h)
+  ◆ zabha_zacas          = zabha + zacas  (JSON tags: rv_zabha_zacas)
+  ◆ zfh_zfa              = zfh + zfa  (JSON tags: rv_zfh_zfa)
+
+  ─── Prefix-Matched Extensions (umbrella → sub-extension family) ───
+
+  ⊃ zicbo                → family: zicbom, zicbop, zicboz  (JSON tags: rv_zicbo)
+
+  ─── Extensions in JSON Only (not found in ISA manual) ───
+
+  ⚠ sdext                (JSON tags: rv_sdext)
+  ⚠ system               (JSON tags: rv_system)
+  ⚠ zbp                  (JSON tags: rv64_zbp, rv_zbp)
+  ⚠ zibi                 (JSON tags: rv_zibi)
+  ⚠ zvabd                (JSON tags: rv_zvabd)
+  ⚠ zvfbdot32f           (JSON tags: rv_zvfbdot32f)
+  ⚠ zvfofp4min           (JSON tags: rv_zvfofp4min)
+  ⚠ zvfofp8min           (JSON tags: rv_zvfofp8min)
+  ⚠ zvfqbdot8f           (JSON tags: rv_zvfqbdot8f)
+  ⚠ zvfqldot8f           (JSON tags: rv_zvfqldot8f)
+  ⚠ zvfwbdot16bf         (JSON tags: rv_zvfwbdot16bf)
+  ⚠ zvfwldot16bf         (JSON tags: rv_zvfwldot16bf)
+  ⚠ zvqbdot8i            (JSON tags: rv_zvqbdot8i)
+  ⚠ zvqdotq              (JSON tags: rv_zvqdotq)
+  ⚠ zvqldot8i            (JSON tags: rv_zvqldot8i)
+  ⚠ zvzip                (JSON tags: rv_zvzip)
+
+  ─── Extensions in ISA Manual Only (not in JSON) ───
+
+  ✗ b
+  ✗ n
+  ✗ sdatomic
+  ✗ sdsp
+  ✗ sdt
+  ✗ sdtrig
+  ✗ sha
+  ✗ shcounterenw
+  ✗ shgatpa
+  ✗ shtvala
+  ✗ shvsatpa
+  ✗ shvstvala
+  ✗ shvstvecd
+  ✗ smaia
+  ✗ smcdeleg
+  ✗ smcntrpmf
+  ✗ smcsrind
+  ✗ smctr
+  ✗ smdbltrp
+  ✗ smepmp
+  ✗ smmpm
+  ✗ smnpm
+  ✗ smpqr
+  ✗ smstateen
+  ✗ ssaia
+  ✗ ssccfg
+  ✗ ssccptr
+  ✗ sscofpmf
+  ✗ sscounterenw
+  ✗ sscsrind
+  ✗ ssdbltrp
+  ✗ ssqosid
+  ✗ ssstateen
+  ✗ ssstrict
+  ✗ sstc
+  ✗ sstvala
+  ✗ sstvecd
+  ✗ ssu64xl
+  ✗ svade
+  ✗ svadu
+  ✗ svbare
+  ✗ svc
+  ✗ svg
+  ✗ svn
+  ✗ svnapot
+  ✗ svpbmt
+  ✗ svrsw60t59b
+  ✗ svvptc
+  ✗ za128rs
+  ✗ za64rs
+  ✗ zaamo
+  ✗ zabc
+  ✗ zalrsc
+  ✗ zam
+  ✗ zama
+  ✗ zama16b
+  ✗ zars
+  ✗ zbk
+  ✗ zca
+  ✗ zcd
+  ✗ zce
+  ✗ zcf
+  ✗ zclsd
+  ✗ zdinx
+  ✗ zfa
+  ✗ zfinx
+  ✗ zhinx
+  ✗ zhinxmin
+  ✗ zic64b
+  ✗ zicbom
+  ✗ zicbop
+  ✗ zicboz
+  ✗ ziccamoa
+  ✗ ziccamoc
+  ✗ ziccid
+  ✗ ziccif
+  ✗ zicclsm
+  ✗ ziccrse
+  ✗ zicfilp
+  ✗ zicntr
+  ✗ zihintntl
+  ✗ zihintpause
+  ✗ zihpm
+  ✗ zilsd
+  ✗ zkt
+  ✗ zmmul
+  ✗ zpm
+  ✗ zqinx
+  ✗ ztso
+  ✗ zve32f
+  ✗ zve32x
+  ✗ zve64d
+  ✗ zve64f
+  ✗ zve64x
+  ✗ zvfh
+  ✗ zvfhmin
+  ✗ zvk
+  ✗ zvkb
+  ✗ zvknc
+  ✗ zvkng
+  ✗ zvksc
+  ✗ zvksg
+  ✗ zvkt
+  ✗ zvl1024b
+  ✗ zvl128b
+  ✗ zvl256b
+  ✗ zvl32b
+  ✗ zvl512b
+  ✗ zvl64b
+
+======================================================================
+  Shared-Instruction Graph (Bonus)
+══════════════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════════
+  Shared-Instruction Graph (extensions connected by shared instructions)
+═══════════════════════════════════════════════════════════════════
+
+  rv32_zk
+    └── rv32_zkn (10 shared), rv32_zknd (2 shared), rv32_zkne (2 shared), rv32_zknh (6 shared)
+
+  rv32_zkn
+    └── rv32_zk (10 shared), rv32_zknd (2 shared), rv32_zkne (2 shared), rv32_zknh (6 shared)
+
+  rv32_zknd
+    └── rv32_zk (2 shared), rv32_zkn (2 shared)
+
+  rv32_zkne
+    └── rv32_zk (2 shared), rv32_zkn (2 shared)
+
+  rv32_zknh
+    └── rv32_zk (6 shared), rv32_zkn (6 shared)
+
+  rv64_zbb
+    └── rv64_zbkb (4 shared), rv64_zk (4 shared), rv64_zkn (4 shared), rv64_zks (4 shared)
+
+  rv64_zbkb
+    └── rv64_zbb (4 shared), rv64_zk (5 shared), rv64_zkn (5 shared), rv64_zks (5 shared)
+
+  rv64_zk
+    └── rv64_zbb (4 shared), rv64_zbkb (5 shared), rv64_zkn (16 shared), rv64_zknd (5 shared), rv64_zkne (4 shared), rv64_zknh (4 shared), rv64_zks (5 shared)
+
+  rv64_zkn
+    └── rv64_zbb (4 shared), rv64_zbkb (5 shared), rv64_zk (16 shared), rv64_zknd (5 shared), rv64_zkne (4 shared), rv64_zknh (4 shared), rv64_zks (5 shared)
+
+  rv64_zknd
+    └── rv64_zk (5 shared), rv64_zkn (5 shared), rv64_zkne (2 shared)
+
+  rv64_zkne
+    └── rv64_zk (4 shared), rv64_zkn (4 shared), rv64_zknd (2 shared)
+
+  rv64_zknh
+    └── rv64_zk (4 shared), rv64_zkn (4 shared)
+
+  rv64_zks
+    └── rv64_zbb (4 shared), rv64_zbkb (5 shared), rv64_zk (5 shared), rv64_zkn (5 shared)
+
+  rv_zbb
+    └── rv_zbkb (5 shared), rv_zk (5 shared), rv_zkn (5 shared), rv_zks (5 shared)
+
+  rv_zbc
+    └── rv_zbkc (2 shared), rv_zk (2 shared), rv_zkn (2 shared), rv_zks (2 shared)
+
+  rv_zbkb
+    └── rv_zbb (5 shared), rv_zk (7 shared), rv_zkn (7 shared), rv_zks (7 shared)
+
+  rv_zbkc
+    └── rv_zbc (2 shared), rv_zk (2 shared), rv_zkn (2 shared), rv_zks (2 shared)
+
+  rv_zbkx
+    └── rv_zk (2 shared), rv_zkn (2 shared), rv_zks (2 shared)
+
+  rv_zk
+    └── rv_zbb (5 shared), rv_zbc (2 shared), rv_zbkb (7 shared), rv_zbkc (2 shared), rv_zbkx (2 shared), rv_zkn (15 shared), rv_zknh (4 shared), rv_zks (11 shared)
+
+  rv_zkn
+    └── rv_zbb (5 shared), rv_zbc (2 shared), rv_zbkb (7 shared), rv_zbkc (2 shared), rv_zbkx (2 shared), rv_zk (15 shared), rv_zknh (4 shared), rv_zks (11 shared)
+
+  rv_zknh
+    └── rv_zk (4 shared), rv_zkn (4 shared)
+
+  rv_zks
+    └── rv_zbb (5 shared), rv_zbc (2 shared), rv_zbkb (7 shared), rv_zbkc (2 shared), rv_zbkx (2 shared), rv_zk (11 shared), rv_zkn (11 shared), rv_zksed (2 shared), rv_zksh (2 shared)
+
+  rv_zksed
+    └── rv_zks (2 shared)
+
+  rv_zksh
+    └── rv_zks (2 shared)
+
+  rv_zvbb
+    └── rv_zvkn (9 shared), rv_zvks (9 shared)
+
+  rv_zvkn
+    └── rv_zvbb (9 shared), rv_zvkned (11 shared), rv_zvknha (3 shared), rv_zvknhb (3 shared), rv_zvks (9 shared)
+
+  rv_zvkned
+    └── rv_zvkn (11 shared)
+
+  rv_zvknha
+    └── rv_zvkn (3 shared), rv_zvknhb (3 shared)
+
+  rv_zvknhb
+    └── rv_zvkn (3 shared), rv_zvknha (3 shared)
+
+  rv_zvks
+    └── rv_zvbb (9 shared), rv_zvkn (9 shared), rv_zvksed (3 shared), rv_zvksh (2 shared)
+
+  rv_zvksed
+    └── rv_zvks (3 shared)
+
+  rv_zvksh
+    └── rv_zvks (2 shared)
+
+  Total nodes (extensions with shared instructions): 32
+  Total edges (extension pairs): 57
+
+Done!
+
