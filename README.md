@@ -220,6 +220,34 @@ Edge Cases                            (3 tests)
 
 Run with `npm test`. All tests use the Node.js built-in test runner (no Mocha/Jest dependency).
 
+## Out of scope: Web Visualizer
+
+*(Note: This feature was built entirely out of curiosity and for fun!)*
+
+A full-stack React and Express-based Web Visualizer was added to make exploring the RISC-V parsed data and cross-references much more intuitive. It features a minimal, sleek dark mode UI.
+
+### Features
+* **Folder Uploads:** Safely upload entire AsciiDoc directories for cross-referencing.
+* **Mermaid Integration:** Directly renders the shared-instruction network diagram on the web page.
+* **Interactive Views:** Provides scrollable panels for the summary table, matching results, and the graph.
+* **Zoom & Pan:** Explore large architecture networks seamlessly within a dedicated canvas.
+* **Export Options:** Instantly copy data, download tables, and save the generated architecture networks as PNG or JPEG.
+
+### Setup and Usage
+
+1. Make sure you are in the root directory (`risc-assignment`).
+2. Install the web visualizer's dependencies first:
+   ```bash
+   cd web-visualizer
+   npm install
+   cd ..
+   ```
+3. Run the provided bash script to start both the backend server and the frontend client simultaneously:
+   ```bash
+   ./run_visualizer.sh
+   ```
+4. Open your browser to the local network link printed in your terminal (typically `http://localhost:5173`).
+
 ## License
 
 MIT
